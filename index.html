@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Seon Ho & Kikigit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div id="music-container">
+        <iframe id="youtube-audio" width="0" height="0" src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=Q0oH3MumH0A&list=RDBFgQk2syvTA&index=24&mute=0&loop=1" frameborder="0" allow="autoplay"></iframe>
+        <button id="music-control">🎵</button>
+    </div>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://png.pngtree.com/thumb_back/fh260/background/20240929/pngtree-delicate-green-with-white-flowers-wedding-arch-in-nature-park-garden-image_16276595.jpg');">
+        <div class="hero-content" data-aos="fade-up">
+            <p>The Wedding of</p>
+            <h1>Kim Seon Ho & Kikigit</h1>
+            <p>10 . 07 . 2027</p>
+        </div>
+    </section>
+
+    <section class="story" data-aos="fade-up">
+        <div class="container">
+            <h2>Cerita Cinta</h2>
+            <p class="quote">"Kami bertemu di rak belakang Indomaret..."</p>
+        </div>
+    </section>
+
+    <section class="countdown-section" data-aos="zoom-in">
+        <div class="container">
+            <h2>Menghitung Hari</h2>
+            <div id="countdown">
+                <div class="time-box"><span id="days">00</span><p>Hari</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Jam</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Menit</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>Detik</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="container">
+            <div class="event-card" data-aos="fade-right">
+                <h3>Akad Nikah</h3>
+                <p>Jumat, 10 Juli 2027</p>
+                <p>10:00 WITA</p>
+                <p>Di Korea Selatan</p>
+            </div>
+            <div class="event-card" data-aos="fade-left">
+                <h3>Resepsi</h3>
+                <p>Jumat, 10 Juli 2027</p>
+                <p>11:00 WITA</p>
+                <p>Menara Phinisi UNM Lantai 14</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" data-aos="fade-up">
+        <div class="container">
+            <h2>Galeri Momen</h2>
+            <div class="grid">
+                <img src="https://2.bp.blogspot.com/-jIQOdptIoQI/U8JBi-nP9pI/AAAAAAAAE70/gaVrZfErM8E/s1600/-wedding-garden-dec.jpg" alt="Gallery 1">
+                <img src="https://media.istockphoto.com/id/1402690827/id/foto/tempat-untuk-upacara-pernikahan-di-taman-di-luar-ruangan-salin-ruang-lengkungan-pernikahan.jpg?s=170667a&w=0&k=20&c=fHZ--ONE7uRpL9TLIqDYhEbhelp0wAaYBqN0Odwh2kA=" alt="Gallery 2">
+                <img src="https://weddingmarket.com/storage/images/artikelideacontent/new/0e69e229ab867974cb89599b3c6b4d68ec07a5a4.webp" alt="Gallery 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp">
+        <div class="container" data-aos="fade-up">
+            <h2>Berikan doa restu untuk pernikahan kami..</h2>
+            <form id="rsvp-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <select>
+                    <option>Hadir</option>
+                    <option>Tidak Hadir</option>
+                </select>
+                <textarea placeholder="Ucapan & Doa"></textarea>
+                <button type="submit">Kirim Ucapan</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="gift" data-aos="flip-up">
+        <div class="container">
+            <h2>Wedding Gift</h2>
+        <p>Tanpa mengurangi rasa hormat, bagi Anda yang ingin memberikan tanda kasih, dapat melalui transfer ke rekening berikut:</p>
+        
+        <div class="gift-card">
+            <div class="bank-logo">
+                <img src="bri.jpg" alt="Logo Bank" style="height: 30px;">
+                </div>
+            <div class="bank-details">
+                <p class="bank-name">No. Rekening</p>
+                <h3 id="nomor-rekening">08543212345</h3>
+                <p class="account-holder">a.n kikigit</p>
+            </div>
+            <div class="gift-actions">
+                <button onclick="copyToClipboard()" class="btn-copy">
+                    <span id="copy-text">Salin No. Rekening</span>
+                </button>
+                <a href="https://wa.me/6285341093906?text=Halo%20kikigit,%20saya%20ingin%20mengirimkan%20tanda%20kasih.." target="_blank" class="btn-send">Kirim Konfirmasi</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2027 Kim Seon Ho & Kikigit Wedding</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
