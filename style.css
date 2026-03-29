@@ -1,0 +1,136 @@
+:root {
+    --primary: #D4A373; /* Dusty Rose / Earthy tone */
+    --accent: #E9EDC9;
+    --text: #5B4D47;
+    --bg: #FAFAF5;
+}
+
+* { margin: 0; padding: 0; box-box-sizing: border-box; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container { width: 90%; max-width: 1000px; margin: auto; padding: 50px 0; text-align: center; }
+
+h1, h2, h3 { font-family: 'Great Vibes', cursive; color: var(--primary); }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 { font-size: 4rem; color: white; margin-bottom: 10px; }
+
+/* Countdown */
+#countdown { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+.time-box { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-width: 80px; }
+.time-box span { font-size: 1.5rem; font-weight: bold; display: block; }
+
+/* Event Cards */
+.event { background: #F3E9E5; }
+.event-card { background: white; padding: 30px; margin: 20px 0; border-radius: 15px; border-bottom: 5px solid var(--primary); }
+
+/* Gallery */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+.grid img { width: 100%; border-radius: 10px; transition: transform 0.3s; }
+.grid img:hover { transform: scale(1.05); }
+
+/* Form Style */
+form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto; }
+input, select, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
+button { padding: 15px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+button:hover { background: #b88a5d; }
+
+/* Audio Control */
+#music-control {
+    position: fixed; bottom: 20px; right: 20px;
+    width: 50px; height: 50px; border-radius: 50%;
+    background: var(--primary); color: white; border: none; z-index: 1000; cursor: pointer;
+}
+
+
+
+
+
+
+.gift-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fdf5f2 100%);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 450px;
+    margin: 30px auto;
+    box-shadow: 0 15px 35px rgba(212, 163, 115, 0.15);
+    text-align: center;
+}
+
+.bank-name {
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.bank-details h3 {
+    font-family: 'Montserrat', sans-serif; /* Gunakan font bersih untuk angka */
+    font-size: 1.8rem;
+    color: var(--text);
+    margin: 10px 0;
+}
+
+.account-holder {
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.gift-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-copy, .btn-send {
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-copy {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-copy:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-send {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.btn-send:hover {
+    background: #5B4D47;
+    transform: scale(1.02);
+}
